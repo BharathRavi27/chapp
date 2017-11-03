@@ -1,0 +1,143 @@
+
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <div class="right_col" role="main">
+          <div class="">
+            <div class="clearfix"></div>
+             {{#if success_msg}}
+             
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="x_panel">
+                        <div class="x_content">
+                            
+                              <div class="alert alert-success">{{success_msg}}</div>
+                                
+
+                                 {{#if error_msg}}
+                                  <div class="alert alert-danger">{{error_msg}}</div>
+                                {{/if}}
+
+                                {{#if error}}
+                                  <div class="alert alert-danger">{{error}}</div>
+                                {{/if}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+            {{/if}} 
+
+
+            {{#if error_msg}}
+             
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="x_panel">
+                        <div class="x_content">
+                            
+                              <div class="alert alert-danger">{{error_msg}}</div>
+                                
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+            {{/if}}
+            {{#if error}}
+             
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="x_panel">
+                        <div class="x_content">
+                            
+                              <div class="alert alert-danger">{{error}}</div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+            {{/if}} 
+
+          </div>
+        </div>
+            <form method="post" action="/login">
+                <div class="form-group">
+                  <h1>Login </h1>
+                  <label>Username</label>
+                  <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {{!-- <div class="right_col" role="main">
+          <div class="">
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_content">
+                   <h2 class="page-header">Account Login</h2>
+                    <form method="post" action="/users/login">
+                      <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                      </div>
+                      <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> --}}

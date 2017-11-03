@@ -1,0 +1,44 @@
+body {
+ overflow-x: hidden;
+ overflow-y: scroll;
+}
+#chat-window {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 800px;
+    overflow-y: scroll;
+}
+#message {
+    height: 80px;
+    width: 82%;
+    bottom: 50px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 0px 10px;
+    overflow-y: scroll;
+}
+#input-container {
+    padding: 10px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+
+}
+#chat-list {
+    border: 1px solid blue;
+    margin: 10px;
+    height: 800px;
+    border-radius: 5px;
+}
+#chat-ul {
+    position: absolute;
+    bottom: 100px;
+    overflow-y: scroll;
+}
+#output {
+    overflow-y: scroll;
+}
